@@ -1,0 +1,53 @@
+<style>
+    .Instructions {
+        float: left;
+    }
+    #glCanvas {
+        float:right;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Graphics Processing Summative</title>
+</head>
+<body onload="main()">
+    <canvas id="glCanvas" width="1000" height="700">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="./js/main.js"></script>
+
+    <div class='Instructions'>
+        <h2>Instructions:</h2>
+        <h4>Animations:</h4>
+        <ul>
+            <li>W: rotates the lower lamp arm </li>
+            <li>S: rotates the lower lamp arm</li>
+            <li>A: rotates the upper lamp arm</li>
+            <li>D: rotates the upper lamp arm</li>
+            <li>Q: rotates the base of the lamp</li>
+            <li>E: rotates the base of the lamp</li>
+            <li>O: opens the cupboard (hold)</li>
+            <li>P: closes the cupboard (hold)</li>
+            <li>K: opens the drawer (hold)</li>
+            <li>L: closes the drawer (hold)</li>
+        </ul>
+        <h4>Camera Controls:</h4>
+        <ul>
+            <li>1: Toggle between camera move and pan </li>
+            <li>Up arrow: Pans the camera upwards / moves camera -ve in y-plane</li>
+            <li>Down arrow: Pans the camera upwards / moves camera +ve in y-plane</li>
+            <li>Left Arrow: Pans the camera to the left / moves camera -ve in x-plane</li>
+            <li>Right arrow: Pans the camera to the right / moves camera +ve in x-plane</li>
+            <li>Shift: Moves the camera +ve in the z-plane</li>
+            <li>Ctrl: Moves the camera -ve in the z-plane</li>
+        </ul>
+    </div>
+</body>
